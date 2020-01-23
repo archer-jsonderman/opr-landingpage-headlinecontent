@@ -1922,5 +1922,9 @@
 .quill .ql-editor p {
   font-size: 2rem;
 }
+.quill#content-body .ql-editor p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

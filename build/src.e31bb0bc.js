@@ -64811,17 +64811,16 @@ class App extends _react.default.Component {
       toolbar: [['bold', 'italic', 'blockquote', {
         'script': 'super'
       }], [{
+        'size': ['small', false]
+      }], [{
         'list': 'ordered'
       }, {
         'list': 'bullet'
-      }], ['clean']]
+      }], ['link', 'clean']]
     };
 
     this.render = () => {
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_forma36ReactComponents.FormLabel, {
-        htmlFor: "content-headline",
-        required: false
-      }, "Headline"), _react.default.createElement(_reactQuill.default, {
+      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactQuill.default, {
         name: "content-headline",
         id: "content-headline",
         value: this.state.headline,
@@ -64829,10 +64828,7 @@ class App extends _react.default.Component {
         onChange: value => this.handleStateChange('headline', value),
         modules: this.bubbleModules,
         theme: "bubble"
-      }), _react.default.createElement(_forma36ReactComponents.FormLabel, {
-        htmlFor: "content-body",
-        required: false
-      }, "Content"), _react.default.createElement(_reactQuill.default, {
+      }), _react.default.createElement(_reactQuill.default, {
         name: "content-body",
         id: "content-body",
         value: this.state.content,
@@ -64901,7 +64897,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58284" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52526" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

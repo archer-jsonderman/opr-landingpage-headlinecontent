@@ -64,19 +64,14 @@ constructor(props){
 	snowModules = {
 		toolbar: [
 			['bold', 'italic','blockquote', {'script':'super'}],
+			 [{ 'size': ['small', false,]}],
 			[{ 'list': 'ordered'}, { 'list': 'bullet' }],
-			['clean']
+			['link','clean']
 		    ],
 	  }
   render = () => {
       return ( 
 	      <>
-		    <FormLabel
-				htmlFor="content-headline"
-				required={false}
-			>
-				 Headline
-			</FormLabel>
 			<ReactQuill 
 		  		name="content-headline"
 		  		id="content-headline" 
@@ -86,12 +81,6 @@ constructor(props){
 		  		modules={this.bubbleModules}
 		  		theme='bubble'
 		  		/>
-			<FormLabel
-				htmlFor="content-body"
-				required={false}
-			>
-				 Content
-			</FormLabel>
 			<ReactQuill 
 		  		name="content-body"
 		  		id="content-body" 
