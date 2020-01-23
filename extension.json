@@ -1,0 +1,9 @@
+{
+  "id": "opr-landingpage-headlinecontent",
+  "name": "Landing: General Content",
+  "srcdoc": "./build/index.html",
+  "sidebar":false,
+  "fieldTypes": [
+      "Object"
+  ]
+}

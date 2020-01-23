@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <link rel="stylesheet" href="https://contentful.github.io/ui-extensions-sdk/cf-extension.css">
+    <!-- load Contentful extensions SDK -->
+    <script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+  </head>
+  <body>
+
+	
+    <div id="root">
+	    
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+    <script>
+	    function charcountupdate(str, maxCount) {
+			var lng = str.length;
+			var countField = document.createElement('div');
+		    countField.innerHTML='<span></span><span></span>';
+		    countField.classList.add('css-1wuc616');
+		    countField.setAttribute('id', 'charcount');
+		    document.querySelector('.css-1ogakd7').appendChild(countField);
+		   
+			var charCount = document.getElementById("charcount");
+			if(maxCount){
+				charCount.firstChild.innerHTML = lng + ' out of '+maxCount+' characters';
+				charCount.lastChild.innerHTML = "Requires less than "+maxCount+" characters";
+			}
+		}
+			    
+	    window.contentfulExtension.init(function(extension){
+		 //TODO build this in react into index.js   
+		    const entryField = extension.entry.fields.heroHeadline;
+		    const storedValue = entryField.getValue();
+		    const uiField = document.getElementById('hero_headline');
+		    
+		    
+		    (!storedValue||storedValue=='')?uiField.value='':uiField.value=storedValue;//make sure our field doesn't display 'undefined' string on first load
+		    
+		    //charcountupdate(storedValue);
+		    uiField.addEventListener('change', event=>{
+			    console.log(event.target.value)
+			    entryField.setValue(event.target.value);
+			    console.log(entryField.getValue());
+			})
+		    
+	    })
+		    
+    </script>
+  </body>
+</html>
