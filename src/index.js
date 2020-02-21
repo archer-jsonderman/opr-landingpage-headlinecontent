@@ -36,7 +36,7 @@ constructor(props){
   }
   
    handleStateChange =(target,newState)=>{
-	   console.log(newState)
+	   //console.log(newState)
 	   const updatedState = update(
 		   this.state,{
 			   [target]:{$set:newState}
