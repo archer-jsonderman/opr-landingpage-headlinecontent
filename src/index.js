@@ -10,15 +10,6 @@ import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import "./index.scss"
 
-let Block = Quill.import('blots/block');
-class BaseBlot extends Block{ }
-BaseBlot.blotName = 'block';
-BaseBlot.tagName = 'f';
-Quill.register('blots/block', BaseBlot);
-const initialData = {
-		content:'',
-		headline:''	
-}
 class App extends React.Component {
   static propTypes = {
     sdk: PropTypes.object.isRequired
