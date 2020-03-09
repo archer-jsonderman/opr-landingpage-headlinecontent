@@ -26,7 +26,11 @@ class App extends React.Component {
 constructor(props){
 	super(props)
 	if(!this.props.sdk.field.getValue()){
-		this.state = initialData
+		this.state = {
+			content:'',
+			headline:''	
+		}
+
 	}else{
 		this.state=this.props.sdk.field.getValue()
 	}

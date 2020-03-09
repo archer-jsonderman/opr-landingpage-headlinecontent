@@ -64766,7 +64766,7 @@ require("@contentful/forma-36-react-components/dist/styles.css");
 
 var _forma36ReactComponents = require("@contentful/forma-36-react-components");
 
-var _reactQuill = _interopRequireDefault(require("react-quill"));
+var _reactQuill = _interopRequireWildcard(require("react-quill"));
 
 require("react-quill/dist/quill.snow.css");
 
@@ -64774,19 +64774,18 @@ require("react-quill/dist/quill.bubble.css");
 
 require("./index.scss");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
-const initialData = {
-  content: '',
-  headline: ''
-};
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 class App extends _react.default.Component {
   constructor(props) {
     super(props);
 
     this.handleStateChange = (target, newState) => {
-      console.log(newState);
+      //console.log(newState)
       const updatedState = (0, _immutabilityHelper.default)(this.state, {
         [target]: {
           $set: newState
@@ -64897,7 +64896,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52526" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57972" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
