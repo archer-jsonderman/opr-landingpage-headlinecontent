@@ -64827,7 +64827,7 @@ class App extends _react.default.Component {
       return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(_reactQuill.default, {
         name: "content-headline",
         id: "content-headline",
-        value: this.state.headline,
+        value: this.state.headline || '',
         placeholder: "Add your headline...",
         onChange: value => this.handleStateChange('headline', value),
         modules: this.bubbleModules,
@@ -64835,7 +64835,7 @@ class App extends _react.default.Component {
       }), _react.default.createElement(_reactQuill.default, {
         name: "content-body",
         id: "content-body",
-        value: this.state.content,
+        value: this.state.content || '',
         placeholder: "Add your content...",
         onChange: value => this.handleStateChange('content', value),
         modules: this.snowModules,
