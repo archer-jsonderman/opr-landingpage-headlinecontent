@@ -80,7 +80,7 @@ constructor(props){
 			<ReactQuill 
 		  		name="content-headline"
 		  		id="content-headline" 
-		  		value={this.state.headline}
+		  		value={this.state.headline||''}
 		  		placeholder="Add your headline..."
 		  		onChange={(value)=>this.handleStateChange('headline',value)} 
 		  		modules={this.bubbleModules}
@@ -89,7 +89,7 @@ constructor(props){
 			<ReactQuill 
 		  		name="content-body"
 		  		id="content-body" 
-		  		value={this.state.content}
+		  		value={this.state.content||''}
 		  		placeholder="Add your content..."
 		  		onChange={(value)=>this.handleStateChange('content',value)} 
 		  		modules={this.snowModules}
