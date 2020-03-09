@@ -64780,6 +64780,11 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+const initialData = {
+  content: '',
+  headline: ''
+};
+
 class App extends _react.default.Component {
   constructor(props) {
     super(props);

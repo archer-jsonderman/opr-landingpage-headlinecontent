@@ -10,6 +10,12 @@ import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
 import "./index.scss"
 
+
+const initialData = {
+		content:'',
+		headline:''	
+}
+
 class App extends React.Component {
   static propTypes = {
     sdk: PropTypes.object.isRequired
