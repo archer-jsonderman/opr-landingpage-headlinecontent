@@ -1,5 +1,5 @@
 {
-  "name": "opr-psc-landingpage-heroarea",
+  "name": "opr-psc-landingpage-headlinecontent",
   "version": "1.0.0",
   "private": false,
   "devDependencies": {
@@ -20,9 +20,6 @@
     "sass": "^1.26.2"
   },
   "dependencies": {
-    "@contentful/forma-36-fcss": "0.0.17",
-    "@contentful/forma-36-react-components": "3.0.0",
-    "@contentful/forma-36-tokens": "0.3.0",
     "@fonticonpicker/react-fonticonpicker": "^1.2.0",
     "@svgr/parcel-plugin-svgr": "^5.1.0",
     "@tinymce/tinymce-react": "^3.3.2",

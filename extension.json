@@ -1,7 +1,7 @@
 {
   "id": "opr-landingpage-headlinecontent",
   "name": "Landing: General Content",
-  "srcdoc": "https://opr-landingpage-generalcontent.netlify.com/index.html",
+  "src": "https://opr-landingpage-generalcontent.netlify.com/index.html",
   "sidebar":false,
   "fieldTypes": [
       "Object"

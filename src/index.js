@@ -3,8 +3,6 @@ import PropTypes from "prop-types"
 import ReactDOM from "react-dom"
 import { init } from "contentful-ui-extensions-sdk"
 import update from 'immutability-helper';
-import "@contentful/forma-36-react-components/dist/styles.css"
-import {FormLabel} from "@contentful/forma-36-react-components"
 import ReactQuill,{Quill} from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import 'react-quill/dist/quill.bubble.css';
