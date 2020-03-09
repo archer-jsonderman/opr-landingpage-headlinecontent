@@ -56,18 +56,21 @@ constructor(props){
     //this.setState({ value })
   }
     bubbleModules = {
+	    clipboard:{matchVisual:false},
 		toolbar: [
 			['bold', 'italic', {'script':'super'}],
 			['clean']
-		    ],
+		],
 	  }
 	snowModules = {
+		clipboard:{matchVisual:false},
 		toolbar: [
 			['bold', 'italic','blockquote', {'script':'super'}],
-			 [{ 'size': ['small', false,]}],
+			[{'header':[3,false]}],
+			[{ 'size': ['small', false,]}],
 			[{ 'list': 'ordered'}, { 'list': 'bullet' }],
 			['link','clean']
-		    ],
+		],
 	  }
   render = () => {
       return ( 
