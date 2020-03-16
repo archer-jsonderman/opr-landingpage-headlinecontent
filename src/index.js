@@ -66,7 +66,7 @@ constructor(props){
 		clipboard:{matchVisual:false},
 		toolbar: [
 			['bold', 'italic','blockquote', {'script':'super'}],
-			[{'header':[3,false]}],
+			[{'header':[4,false]}],
 			[{ 'size': ['small', false,]}],
 			[{ 'list': 'ordered'}, { 'list': 'bullet' }],
 			['link','clean']
